@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "DevToolkit",
+    "toolsCount": "共 {count} 个工具",
+    "version": "v0.1.0",
+    "sidebar": {
+      "home": "全部工具",
+      "favorites": "⭐ 收藏",
+      "settings": "设置",
+      "search": "搜索工具..."
+    },
+    "search": {
+      "placeholder": "搜索工具...",
+      "hint": "试搜: JSON / base64 / QR / 时间戳...",
+      "empty": "未找到匹配的工具",
+      "navigate": "↑↓ 导航",
+      "open": "↵ 打开",
+      "close": "Esc 关闭"
+    },
+    "toolbar": {
+      "back": "← 工具列表",
+      "clear": "清空"
+    },
+    "panel": {
+      "input": "输入",
+      "output": "输出",
+      "chars": "{n} 字符",
+      "lines": "{n} 行"
+    },
+    "status": {
+      "connected": "已连接",
+      "disconnected": "已断开",
+      "error": "连接错误",
+      "reconnect": "{s}s 后重连 ({n}/{max})"
+    },
+    "favorite": {
+      "add": "添加收藏",
+      "remove": "取消收藏"
+    },
+    "clipboard": {
+      "copied": "已复制",
+      "copyFail": "复制失败"
+    },
+    "json": {
+      "valid": "✓ JSON 有效",
+      "invalid": "✗ JSON 无效: {msg}",
+      "processing": "⏳ 处理中 (Worker)..."
+    },
+    "enDecode": {
+      "error": "Error: {msg}"
+    }
+  },
+  "tools": {
+    "copy": "📋 复制",
+    "process": "▶ 格式化",
+    "compress": "压缩",
+    "beautify": "格式化",
+    "validate": "校验",
+    "execute": "▶ 执行",
+    "clear": "清空",
+    "save": "💾 保存",
+    "compare": "▶ 对比",
+    "generate": "▶ 生成",
+    "convert": "▶ 转换",
+    "send": "▶ 发送",
+    "sending": "发送中...",
+    "capture": "📷 截取全屏",
+    "captureRegion": "📷 截取区域",
+    "capturing": "截图中...",
+    "copyImage": "📋 复制图片",
+    "connecting": "连接",
+    "disconnect": "断开",
+    "search": "搜索",
+    "result": "结果",
+    "noMatch": "无匹配结果",
+    "regexError": "正则错误: {msg}",
+    "invalidInput": "无效输入",
+    "conversionError": "转换错误"
+  },
+  "settings": {
+    "title": "设置",
+    "theme": "主题",
+    "themeSystem": "跟随系统",
+    "themeLight": "浅色",
+    "themeDark": "深色",
+    "language": "语言 / Language"
+  },
+  "categories": {
+    "converter": "转换器",
+    "encoder": "编解码",
+    "formatter": "格式化",
+    "generator": "生成器",
+    "network": "网络",
+    "image": "图像",
+    "text": "文本",
+    "other": "其他"
+  }
+}

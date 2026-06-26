@@ -1,0 +1,170 @@
+/* ═══════════════════════════════════════════════
+   DevToolkit Design System v2.0
+   Premium developer-toolbox aesthetic
+   Dark-first, glass-depth, refined spacing
+   ═══════════════════════════════════════════════ */
+
+:root {
+  /* ── Surface Tokens (Dark Mode Default) ── */
+  --fh-surface-0: #0d1116;       /* Canvas / page background */
+  --fh-surface-1: #141a22;       /* Elevated panels / sidebar */
+  --fh-surface-2: #1b2230;       /* Cards / inputs / toolbar */
+  --fh-surface-3: #242d3c;       /* Hover states / dividers */
+  --fh-surface-glass: rgba(20, 26, 34, 0.84); /* Glass overlay */
+
+  /* ── Text Tokens ── */
+  --fh-text-primary: rgba(235, 245, 255, 0.92);
+  --fh-text-secondary: rgba(185, 202, 222, 0.72);
+  --fh-text-tertiary: rgba(140, 158, 180, 0.56);
+  --fh-text-accent: #6db3f2;
+
+  /* ── Accent System ── */
+  --fh-accent: #4a9eff;
+  --fh-accent-hover: #6db3f2;
+  --fh-accent-pressed: #3880d9;
+  --fh-accent-muted: rgba(74, 158, 255, 0.10);
+  --fh-accent-ghost: rgba(74, 158, 255, 0.06);
+
+  /* ── Semantic Colors ── */
+  --fh-success: #3fb950;
+  --fh-warning: #d29922;
+  --fh-error: #f85149;
+  --fh-info: #58a6ff;
+
+  /* ── Borders ── */
+  --fh-border-subtle: rgba(255, 255, 255, 0.06);
+  --fh-border-default: rgba(255, 255, 255, 0.10);
+  --fh-border-hover: rgba(255, 255, 255, 0.16);
+  --fh-border-focus: var(--fh-accent);
+
+  /* ── Shadows ── */
+  --fh-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.20);
+  --fh-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.18);
+  --fh-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.36), 0 1px 3px rgba(0, 0, 0, 0.22);
+  --fh-shadow-lg: 0 8px 36px rgba(0, 0, 0, 0.44);
+  --fh-shadow-glow-sm: 0 0 0 1px rgba(74, 158, 255, 0.20), 0 2px 8px rgba(74, 158, 255, 0.15);
+  --fh-shadow-glow-md: 0 0 0 1px rgba(74, 158, 255, 0.24), 0 4px 20px rgba(74, 158, 255, 0.20);
+
+  /* ── Radius Scale ── */
+  --fh-radius-xs: 4px;
+  --fh-radius-sm: 6px;
+  --fh-radius-md: 8px;
+  --fh-radius-lg: 12px;
+  --fh-radius-xl: 16px;
+  --fh-radius-full: 9999px;
+
+  /* ── Spacing Scale ── */
+  --fh-space-1: 4px;
+  --fh-space-2: 8px;
+  --fh-space-3: 12px;
+  --fh-space-4: 16px;
+  --fh-space-5: 20px;
+  --fh-space-6: 24px;
+  --fh-space-8: 32px;
+  --fh-space-10: 40px;
+
+  /* ── Motion ── */
+  --fh-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --fh-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --fh-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --fh-duration-instant: 80ms;
+  --fh-duration-fast: 150ms;
+  --fh-duration-base: 200ms;
+  --fh-duration-slow: 300ms;
+  --fh-duration-glacial: 500ms;
+
+  /* ── Typography ── */
+  --fh-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', Helvetica, Arial, sans-serif;
+  --fh-font-mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', 'Consolas', 'Noto Sans Mono', monospace;
+  --fh-font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', Helvetica, Arial, sans-serif;
+  
+  --fh-font-size-xs: 10px;
+  --fh-font-size-sm: 11.5px;
+  --fh-font-size-base: 13px;
+  --fh-font-size-md: 14px;
+  --fh-font-size-lg: 16px;
+  --fh-font-size-xl: 20px;
+  --fh-font-size-2xl: 24px;
+
+  --fh-line-height-tight: 1.25;
+  --fh-line-height-base: 1.5;
+  --fh-line-height-relaxed: 1.65;
+
+  --fh-font-weight-normal: 400;
+  --fh-font-weight-medium: 500;
+  --fh-font-weight-semibold: 600;
+  --fh-font-weight-bold: 700;
+
+  /* ── Apply to root ── */
+  font-family: var(--fh-font-sans);
+  font-size: var(--fh-font-size-base);
+  line-height: var(--fh-line-height-base);
+  color: var(--fh-text-primary);
+  background: var(--fh-surface-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Light Mode ── */
+:root.light,
+[data-theme='light'] {
+  --fh-surface-0: #f8f9fb;
+  --fh-surface-1: #ffffff;
+  --fh-surface-2: #f0f2f5;
+  --fh-surface-3: #e4e7ec;
+  --fh-surface-glass: rgba(255, 255, 255, 0.84);
+  --fh-text-primary: rgba(15, 23, 42, 0.92);
+  --fh-text-secondary: rgba(51, 65, 85, 0.65);
+  --fh-text-tertiary: rgba(100, 116, 139, 0.50);
+  --fh-text-accent: #2563eb;
+  --fh-accent: #2563eb;
+  --fh-accent-hover: #1d4ed8;
+  --fh-accent-pressed: #1e40af;
+  --fh-accent-muted: rgba(37, 99, 235, 0.08);
+  --fh-accent-ghost: rgba(37, 99, 235, 0.04);
+  --fh-border-subtle: rgba(0, 0, 0, 0.04);
+  --fh-border-default: rgba(0, 0, 0, 0.08);
+  --fh-border-hover: rgba(0, 0, 0, 0.14);
+  --fh-border-focus: var(--fh-accent);
+  --fh-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --fh-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --fh-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --fh-shadow-lg: 0 8px 36px rgba(0, 0, 0, 0.12);
+  --fh-shadow-glow-sm: 0 0 0 1px rgba(37, 99, 235, 0.16), 0 2px 8px rgba(37, 99, 235, 0.10);
+  --fh-shadow-glow-md: 0 0 0 1px rgba(37, 99, 235, 0.20), 0 4px 20px rgba(37, 99, 235, 0.14);
+}
+
+/* ── Base resets ── */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+#app { height: 100%; }
+
+/* ── Scrollbar styling ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--fh-surface-3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fh-text-tertiary); }
+
+/* ── Text selection ── */
+::selection { background: var(--fh-accent-muted); color: var(--fh-text-accent); }
+::-moz-selection { background: var(--fh-accent-muted); color: var(--fh-text-accent); }
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 2px solid var(--fh-accent);
+  outline-offset: 1px;
+  border-radius: var(--fh-radius-xs);
+}
+
+/* ── Glass surface utility ── */
+.fh-glass {
+  background: var(--fh-surface-glass);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+.fh-glass-subtle {
+  background: rgba(20, 26, 34, 0.64);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+}

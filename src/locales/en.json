@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "DevToolkit",
+    "toolsCount": "{count} tools",
+    "version": "v0.1.0",
+    "sidebar": {
+      "home": "All Tools",
+      "favorites": "⭐ Favorites",
+      "settings": "Settings",
+      "search": "Search tools..."
+    },
+    "search": {
+      "placeholder": "Search tools...",
+      "hint": "Try: JSON / base64 / QR / timestamp...",
+      "empty": "No tools found",
+      "navigate": "↑↓ Navigate",
+      "open": "↵ Open",
+      "close": "Esc Close"
+    },
+    "toolbar": {
+      "back": "← Tool List",
+      "clear": "Clear"
+    },
+    "panel": {
+      "input": "Input",
+      "output": "Output",
+      "chars": "{n} chars",
+      "lines": "{n} lines"
+    },
+    "status": {
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "error": "Connection error",
+      "reconnect": "Reconnect in {s}s ({n}/{max})"
+    },
+    "clipboard": {
+      "copied": "Copied",
+      "copyFail": "Copy failed"
+    },
+    "json": {
+      "valid": "✓ Valid JSON",
+      "invalid": "✗ Invalid JSON: {msg}",
+      "processing": "⏳ Processing (Worker)..."
+    },
+    "enDecode": {
+      "error": "Error: {msg}"
+    },
+    "favorite": {
+      "add": "Add to Favorites",
+      "remove": "Remove from Favorites"
+    }
+  },
+  "tools": {
+    "copy": "📋 Copy",
+    "process": "▶ Format",
+    "compress": "Compress",
+    "beautify": "Beautify",
+    "validate": "Validate",
+    "execute": "▶ Execute",
+    "clear": "Clear",
+    "save": "💾 Save",
+    "compare": "▶ Compare",
+    "generate": "▶ Generate",
+    "convert": "▶ Convert",
+    "send": "▶ Send",
+    "sending": "Sending...",
+    "capture": "📷 Full Screenshot",
+    "captureRegion": "📷 Region Screenshot",
+    "capturing": "Capturing...",
+    "copyImage": "📋 Copy Image",
+    "connecting": "Connect",
+    "disconnect": "Disconnect",
+    "search": "Search",
+    "result": "Result",
+    "noMatch": "No match",
+    "regexError": "Regex error: {msg}",
+    "invalidInput": "Invalid input",
+    "conversionError": "Conversion error"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "themeSystem": "Follow System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "language": "Language"
+  },
+  "categories": {
+    "converter": "Converters",
+    "encoder": "Encoders",
+    "formatter": "Formatters",
+    "generator": "Generators",
+    "network": "Network",
+    "image": "Image",
+    "text": "Text",
+    "other": "Other"
+  }
+}
