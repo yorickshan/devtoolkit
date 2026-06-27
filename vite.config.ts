@@ -14,10 +14,12 @@ export default defineConfig(async () => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          monaco: ['monaco-editor'],
-          naive: ['naive-ui'],
-          vendor: ['vue', 'vue-router', 'pinia', '@vueuse/core'],
+        manualChunks(id) {
+          if (id.includes('monaco-editor')) return 'monaco';
+          if (id.includes('naive-ui')) return 'naive';
+          if (id.includes('@vicons')) return 'vicons';
+          if (id.includes('xlsx')) return 'xlsx';
+          if (id.includes('node_modules')) return 'vendor';
         },
       },
     },
